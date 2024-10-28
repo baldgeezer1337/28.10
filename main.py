@@ -15,8 +15,20 @@ with open ("dati.txt","r", encoding="utf-8") as file:
     print(rinda.strip())'''
 
 
-noraiditais_burts='k'
+noraiditais_burts='f'
 with open('teksts.txt', 'r', encoding='utf-8') as file:
     saturs=file.read()
-    saturs=saturs.lower()
-    vardi=saturs.split()
+saturs=saturs.lower()
+vardi=saturs.split()
+saraksts=[ ]
+
+for elements in vardi:
+    if elements[0]==noraiditais_burts:
+        saraksts.append(elements[0])
+        len(elements)>0 and elements[0]==noraiditais_burts
+    print(elements[0])
+
+print(saraksts)
+print(saturs)
+print(vardi)
+print(len(saraksts))
